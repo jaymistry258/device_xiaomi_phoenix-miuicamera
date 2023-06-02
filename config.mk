@@ -14,9 +14,9 @@
 
 # Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    device/xiaomi/surya-miuicamera
+    device/xiaomi/phoenix-miuicamera
 
-DEVICE_CAMERA_PATH := device/xiaomi/surya-miuicamera
+DEVICE_CAMERA_PATH := device/xiaomi/phoenix-miuicamera
 TARGET_USES_MIUI_CAMERA := true 
 
 # Camera property
@@ -39,7 +39,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_CAMERA_PATH)/init/init.miuicamera.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.miuicamera.rc
 
-# MIUI Camera Overlay to Surya and Karna
+# MIUI Camera Overlay to Phoenix and Karna
 PRODUCT_PACKAGES += \
     J20CMiuiCameraOverlay
 
@@ -55,4 +55,4 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_CAMERA_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_CAMERA_PATH)/sepolicy/public
 
 # Vendor Proprietary
-$(call inherit-product, vendor/xiaomi/surya-miuicamera/surya-miuicamera-vendor.mk)
+$(call inherit-product, vendor/xiaomi/phoenix-miuicamera/phoenix-miuicamera-vendor.mk)

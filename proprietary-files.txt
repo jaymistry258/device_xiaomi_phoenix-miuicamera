@@ -1,4 +1,4 @@
-# All MIUI blobs below are extracted from surya V14.0.1.0.SJGMIXM
+# All MIUI blobs below are extracted from phoenix V14.0.1.0.SJGMIXM
 
 # Camera configs - From MIUI
 vendor/etc/camera/102_SummerDay.png|e27c1ad14c763cbc0159aa5a0357b934cbc16ced
